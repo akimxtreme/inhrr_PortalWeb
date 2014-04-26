@@ -1,0 +1,100 @@
+<?php include_once('funciones/plantillaMaestra.php'); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/gerencia_gp.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php 
+include_once('funciones/plantillaMaestra.php');
+include_once('funciones.php');
+linkGlobal();
+?>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Gerencia Sectorial de Producción</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<?php
+metaGoogle();
+?>        
+</head>
+<body>	
+<!-- CONTENEDOR -->
+<div id="contenedor">
+	<?php
+	tamanioLetra();
+	cintilloGobierno();
+	encabezado_MenuBanner();
+	?>
+<!-- InstanceBeginEditable name="slideshow" --><!-- InstanceEndEditable -->
+	<?php
+	menuSuperior();
+	menuPrincipal();
+	?>
+
+
+<!-- Contenedor -->
+<div class="contenedor_0">
+<!-- InstanceBeginEditable name="informacion" -->
+<!-- Contenido -->
+<div class="seccion_1">
+	<h3 class="contenedor_1">CAPACIDADES DE PRODUCCIÓN</h3>
+	<img class="global" src="imagenes/img_gp/gp_8.png" alt="Imagen Gerencia de Producción" title="Imagen Gerencia de Producción">
+    <table class="global">
+      <!-- Primer Trimestre -->
+      <tr>
+        <td class="w80 global_titulo">VACUNAS</td>
+        <td class="w20 global_titulo">Nº DOSIS 1 ANO</td>
+      </tr>
+      <tr>
+        <td class="w80 global shadow">COMBINADAS: DUPLA, DPT, TETRAVALENTE Y PENTAVALENTE</td>
+        <td class="w20 global">25.000.000</td>
+      </tr>
+      
+      <tr>
+        <td class="w80 global shadow">TETANICA</td>
+        <td class="w20 global">10.000.000</td>
+      </tr>
+      <tr>
+        <td class="w80 global shadow">FORMULACION, LLENADO y EMBALAJE DE OTRAS VACUNAS</td>
+        <td class="w20 global">85.000.000</td>
+      </tr>
+      <tr>
+        <td class="w80 global shadow">CAPACIDAD INSTALADA TOTAL DEL AREA DE FORMULACIÓN, LLENADO Y EMBALAJE (INCUYE VACUNAS COMBINADAS Y OTRAS VACUNAS)</td>
+        <td class="w20 global">120.000.000</td>
+      </tr>
+	</table>
+    <p class="boton_global">Estas capacidades, además de satisfacer los requerimientos nacionales de estos
+rubros, nos permiten el establecimiento de alianzas y abastecimiento de otros países, para
+la incorporación a todos aquellos convenios de cooperación regional que establezca el
+Estado Venezolano (ALBA, etc.).</p>
+<p class="boton_global">En el caso de Formulación y Llenado, se prevee una capacidad para procesar otros
+Biológicos requeridos y/ó producidos en el país, considerándose que es una de las áreas
+de mayor especialización y sofisticación y que no existe en el ámbito nacional otra de
+funciones y alcance similar.</p>
+</div>
+<!-- InstanceEndEditable -->
+<div class="derecha">
+<!-- Accesos Directos: Gerencia de Docencia e Investigación -->
+<div class="seccion_2">
+<h1 class="contenedor_0">ACCESOS DIRECTOS</h1>
+<h2 class="contenedor_0">Accesos directos al espacio de la Gerencia Sectorial de Diagnóstico y Vigilancia Epidemiológica</h2>
+<iframe class="acceso" src="accesos_de.php"></iframe> 
+</div>
+<!-- Sitios de Interes: Gerencia de Docencia e Investigación -->
+<div class="seccion_2">
+<h1 class="contenedor_0">SITIOS DE INTERES</h1>
+<h2 class="contenedor_0">Sitios de interés recomendados por la Gerencia Sectorial de Diagnóstico y Vigilancia Epidemiológica</h2>
+<iframe class="acceso" src="sitios_interes_de.php"></iframe> 
+</div>
+</div>
+<!-- InstanceBeginEditable name="info_2" -->
+<!-- InstanceEndEditable -->
+</div>
+
+	<?php
+	piePagina();
+	?>
+</div>
+<!-- CONTENEDOR - FIN -->
+</body>
+<!-- InstanceEnd --></html>

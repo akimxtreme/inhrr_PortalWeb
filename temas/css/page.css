@@ -1,0 +1,67 @@
+/********************
+  Overall Demo pages
+ ********************/
+body                   { font-size:12px;}
+a, a img               { border: 0; text-decoration: none; }
+
+#page-wrap, #demo2     { width: 90%; padding: 0 15px; margin: 0 auto 50px; position: relative; }
+
+h1.titulo_noticia      { float:left;  font: bold 18px 'Arial'; letter-spacing: -2px; border: #CCC solid px; margin:5px 5px 5px 10px; text-align: left; width:94.5%;  }
+h2.subtitulo_noticia   { float:left; font: bold 14px Helvetica, Sans-Serif; letter-spacing: -1px; margin:5px 5px 5px 10px; color: #002266; width:94.5%; text-align: left;}
+
+
+ul.noticia                     { margin: 0; padding-left: 35px; }
+ul.noticia li.noticia   { font: 15px Georgia, Serif; margin: 0 0 8px 0; }
+
+
+img.img_noticia{
+	float:left;
+	width: 246px;
+	height: 250px;
+	border: #CCC solid 2px;
+	margin: 5px 2px 5px 5px;
+	border-radius: 4px;
+	}
+span.p_noticia{
+	float: right;
+	font-size:12px;
+	font-family:'Arial';
+	width: 53%;
+	height:290px;
+	border: #CCC solid 2px;
+	border-radius: 4px;
+	margin:5px 10px 5px 0px;
+	background:#CCC;
+	}
+span.p_noticia_1{
+	float:left;
+	font-size:11px;
+	font-family:'Arial';
+	width: 244px;
+	height:30px;
+	border:#666 solid 2px;
+	border-radius: 4px;
+	background: #999;
+	color:#FFF;
+	margin:2px 5px 5px 5px;
+	text-align:center;
+	}	
+	
+span.p_noticia_2{
+	float:left;
+	font-size:12px;
+	font-family:'Arial';
+	width: 95%;
+	height:100px;
+	border:#333 solid 2px;
+	margin:5px;
+	}
+p.p_noticia {
+	text-align: left;
+	font-size:11px;
+	color:#333;
+	float:left;
+	margin: 0px 0px 3px 10px;
+	width: 46%;
+	height: 150px;
+	}

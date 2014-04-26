@@ -1,0 +1,73 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+a { text-decoration: none;  }
+a:focus { outline: 0; }
+ul { font-size:12px;
+float: left;}
+ul#nav1{
+	padding:0px;
+		}
+li {
+	font-size:16px;
+	list-style: inside;
+	margin: 2px 5px 4px 3px;
+}
+#page-wrap {
+margin: 6px 5px 4px 0px;
+float:left;
+width:100%;
+}
+.list-wrap{
+	float:left;
+	width: 70%;
+	margin: 2px;
+	height:auto;
+	padding:0px;}
+/* Generic Utility */
+.hide { 
+position: absolute; 
+}
+/* Specific to example one */
+
+#example-one { 
+padding: 2px; 
+margin: 0px;
+}
+
+#example-one .nav { 
+overflow: hidden; 
+margin: 0 0 0px 0;
+width: 25%;
+border-radius:4px;
+}
+
+#example-one .nav li { width: 100%; float: left; margin: 2px 0px 2px 0px; list-style:none; }
+#example-one .nav li.last { margin-right: 0; list-style:none; }
+#example-one .nav li a { display: block; padding: 10px; background: #111; color: white; font-size: 12px; text-align: center; border: 0; list-style:none; }
+#example-one .nav li a:hover { background-color: #333; font-size:12px; list-style:none; }
+
+#example-one ul { list-style: none; width: 100%; font-size:12px;}
+#example-one ul li a { display: block; border-bottom: 1px solid #666; color: #666; font-size:12px; }
+#example-one ul li a:hover { background: #fe4902; color: white; font-size:12px; }
+#example-one ul li:last-child a { border: none; font-size:12px; }
+
+#example-one ul li.nav-1 a.current, #example-one ul.1 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-2 a.current, #example-one ul.2 li a:hover { background-color:  #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-3 a.current, #example-one ul.3 li a:hover { background-color:  #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-4 a.current, #example-one ul.4 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-5 a.current, #example-one ul.5 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-6 a.current, #example-one ul.6 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-7 a.current, #example-one ul.7 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-8 a.current, #example-one ul.8 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-9 a.current, #example-one ul.9 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-10 a.current, #example-one ul.10 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-11 a.current, #example-one ul.11 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-12 a.current, #example-one ul.12 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-13 a.current, #example-one ul.13 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-14 a.current, #example-one ul.14 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+#example-one ul li.nav-15 a.current, #example-one ul.15 li a:hover { background-color: #0575f4; color: white; list-style:none; }
+

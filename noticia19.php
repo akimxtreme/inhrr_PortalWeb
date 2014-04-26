@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/menu_superior.dwt.php" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<?php 
+include_once('funciones/plantillaMaestra.php');
+include_once('funciones.php');
+linkGlobal();
+?>
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Noticia 19</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<?php
+metaGoogle();
+?>        
+</head>
+<body>	
+<!-- CONTENEDOR -->
+<div id="contenedor">
+	<?php
+	tamanioLetra();
+	cintilloGobierno();
+	encabezado_MenuBanner();
+	?>
+<!-- InstanceBeginEditable name="slideshow" --><!-- InstanceEndEditable -->
+	<?php
+	menuSuperior();
+	menuPrincipal();
+	?>
+
+
+<!-- Contenedor -->
+<div class="contenedor_0">
+<!-- InstanceBeginEditable name="informacion" -->
+<div class="seccion_4">
+	<h2 class="contenedor_1">Carabobo: Intensificarán medidas preventivas contra la influenza AH1N1 durante vacaciones</h2>
+	<h3 class="contenedor_1">Autoridades en salud precisaron que la entidad carabobeña ha sido la última en registrar un contagiado por la gripe</h3>
+    <div class="sections70">
+    	<p class="columns">Frente a la próxima temporada vacacional, el Gobierno Bolivariano del estado Carabobo intensificará medidas preventivas y educativas en las empresas y planes vacacionales de la entidad, ante la presencia de la influenza AH1N1.</p>
+        <p class="columns">El presidente del Instituto Carabobeño para la Salud (Insalud), Raúl Falcón, informó este lunes que se han realizado charlas iniciales a los trabajadores del área educativa, entre otras instituciones, y por la ausencia de estudiantes en los colegios, se realizarán visitas a los planes vacacionales adelantados por la Gobernación carabobeña.</p>
+        <p class="columns">Ya comenzamos a dar este tipo de información a las empresas que tienen un número importante de trabajadores, en los próximos días vamos a comenzar con Corpoelec", aseguró.</p>
+        <p class="columns">Falcón precisó que la entidad registra el último infectado por el virus. "El estado Carabobo es el último estado en tener el contagio del AH1N1 y ni siquiera estamos dentro de los 5 primeros estados que tienen mayor número de infectados".</p>
+        <p class="columns"><strong>Información obtenida desde el portal web www.rnv.gob.ve, ver noticia original <a target="_blank" href="http://www.rnv.gov.ve/index.php?option=com_content&view=article&id=17224:carabobo-intensificaran-medidas-preventivas-contra-la-influenza-ah1n1-durante-vacaciones-audio&catid=56:salud&Itemid=80" title="Noticia">aquí &raquo;</a></strong></p>
+    </div>
+	<img class="columns3" src="imagenes/img_noticias/noticia19.png" alt="Imagen Relacionada con la noticia">
+</div>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="info_2" -->
+<!-- InstanceEndEditable -->
+</div>
+
+	<?php
+	piePagina();
+	?>
+</div>
+<!-- CONTENEDOR - FIN -->
+</body>
+<!-- InstanceEnd --></html>

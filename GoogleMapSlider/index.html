@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>
+  
+	<meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
+	
+	<title>Google Map Slider</title>
+	
+	<link rel='stylesheet' type='text/css' href='css/style.css' />
+  	
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
+  <script type='text/javascript' src='js/example.js'></script>
+  <script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=true'></script>
+  
+  <script type='text/javascript'>  
+    $(function() {
+    
+      var chicago = new google.maps.LatLng(41.924832, -87.697456),
+          pointToMoveTo, 
+          first = true,
+          curMarker = new google.maps.Marker({}),
+          $el;
+      
+      var myOptions = {
+          zoom: 15,
+          center: chicago,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+      
+      var map = new google.maps.Map($("#map_canvas")[0], myOptions);
+    
+      $("#locations li").mouseenter(function() {
+      
+        $el = $(this);
+                
+        if (!$el.hasClass("hover")) {
+        
+          $("#locations li").removeClass("hover");
+          $el.addClass("hover");
+        
+          if (!first) { 
+            
+            // Clear current marker
+            curMarker.setMap(); 
+            
+            // Set zoom back to Chicago level
+            // map.setZoom(10);
+          }
+          
+          // Move (pan) map to new location
+          pointToMoveTo = new google.maps.LatLng($el.attr("data-geo-lat"), $el.attr("data-geo-long"));
+          map.panTo(pointToMoveTo);
+          
+          // Add new marker
+          curMarker = new google.maps.Marker({
+              position: pointToMoveTo,
+              map: map,
+              icon: "images/marker.png"
+          });
+          
+          // On click, zoom map
+          google.maps.event.addListener(curMarker, 'click', function() {
+             map.setZoom(17);
+          });
+          
+          // Fill more info area
+          $("#more-info")
+            .find("h2")
+              .html($el.find("h3").html())
+              .end()
+            .find("p")
+              .html($el.find(".longdesc").html());
+          
+          // No longer the first time through (re: marker clearing)        
+          first = false; 
+        }
+        
+      });
+      
+      $("#locations li:first").trigger("mouseenter");
+      
+    });
+  </script>
+
+</head>
+
+<body>
+
+	<div id="page-wrap">
+	   
+	   <ul id="locations">
+	   
+        <li data-geo-lat="10.490629" data-geo-long="-66.895934">
+          <h3>Edificio Sede</h3>
+          <p>Instituto Nacional de Higiene</p>
+          <p> "Rafael Rangel"</p>
+          
+          <p class="longdesc"><strong>Ubicación:</strong> Ciudad Universitaria, detrás del Hospital Clínico
+Universitario, Caracas,
+República Bolivariana de Venezuela.
+          </br>
+          <strong>Teléfono(s):</strong> (0212) 219 1600/1622,.
+          <br>
+          <strong>Fax:</strong> 219-1785 / 219-1779 / 693-4303 / 693-2116.
+          </p>
+         
+         
+        </li>
+        
+        <li data-geo-lat="10.491193" data-geo-long="-66.896326">
+          <h3>Planta de Vacunas</h3>
+          <p>Planta Productora de Vacunas</p>
+          <p class="longdesc"><strong>Ubicación:</strong> Ciudad Universitaria, detrás del Hospital Clínico
+Universitario, al lado del Edificio Sede del INHRR, Caracas, República Bolivariana de Venezuela.
+          </br>
+          <strong>Teléfono(s):</strong> (0212) 219 1712/1709.
+          <br>
+          </p>
+          
+          
+        </li>
+        
+        <li data-geo-lat="10.490629" data-geo-long="-66.895934">
+          <h3>Vacunas Virales</h3>
+          <p>Vacunas Virales</p>
+          <p class="longdesc"><strong>Ubicación:</strong> Detrás del Edificio Sede del INHRR, al lado de la Planta Productora de Vacunas, Caracas, República Bolivariana de Venezuela.
+          </br>
+          <strong>Teléfono(s):</strong> (0212) 219 1784/1714.
+          <br>
+          </p>
+        </li>
+        
+        <li data-geo-lat="10.490629" data-geo-long="-66.895934">
+          <h3>Malaria y Micología</h3>
+          <p>Módulo de Extensión de Malaria.</p>
+          <p>Departamento de Micología.</p>
+          <p class="longdesc"><strong>Ubicación:</strong> Detrás del Edificio Sede del INHRR, llegando a la Lavandería del Hospital Clínico Universitario, Caracas, República Bolivariana de Venezuela.
+          </br>
+          </br>
+          <strong>Módulo de Extensión de Malaria</strong>
+          </br>
+          <strong>Teléfono:</strong> (0212) 219 1706.
+          </br>
+          </br>
+          <strong>Departamento de Micología</strong>
+          </br>
+          <strong>Teléfono(s):</strong> (0212) 219 1707.
+          <br>
+          <strong>Fax:</strong> (0212) 693 5151/4476.
+          </p>
+        </li>
+        
+         <li data-geo-lat="10.490629" data-geo-long="-66.895934">
+          <h3>Bioterio</h3>
+          <p>Bioterio Central</p>
+          <p class="longdesc"><strong>Ubicación:</strong> Detrás del Edificio Sede del INHRR, Caracas, República Bolivariana de Venezuela.
+          </br>
+          <strong>Teléfono(s):</strong> (0212) 219 1720/1721.
+          <br>
+          </p>
+        </li>
+        
+     </ul>
+
+     <div id="map_canvas"></div>
+     
+     <div id="more-info"><div>
+     
+        <h2>More Info</h2>
+        <p>Hover over location on the left. (JavaScript must be enabled)</p>
+     
+     </div></div>
+			
+	</div>
+	
+</body>
+
+</html>

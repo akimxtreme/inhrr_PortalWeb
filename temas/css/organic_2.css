@@ -1,0 +1,55 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+a { text-decoration: none;
+}
+a:focus { outline: 0; }
+ul { font-size:12px;}
+li {
+	
+	font-size:12px;
+	list-style: inside;
+	margin: 2px 3px 4px 3px;}
+#page-wrap {
+margin: 6px 0px 4px 0px;
+float:left;
+width: 100%;
+}
+/* Generic Utility */
+.hide { 
+position: absolute; 
+}
+/* Specific to example one */
+
+#example-one { 
+padding: 2px; 
+margin: 0px;
+}
+
+#example-one .nav { 
+overflow: hidden; 
+margin: 0 0 10px 0;
+}
+
+#example-one .nav li { width: 24%; float: left; margin: 4px 5px 0px 0; list-style:none; }
+#example-one .nav li.last { margin-right: 0; list-style:none; }
+#example-one .nav li a { display: block; padding: 10px; background: #333; border-radius: 4px; border: #FFF solid 2px; color: white; font-size: 12px; text-align: center; list-style:none; }
+#example-one .nav li a:hover { background-color: #06F; color:#FFF; border:#FFF solid 2px; font-size:12px; list-style:none; }
+
+#example-one ul { list-style: none; width: 100%; font-size:12px;}
+#example-one ul li a { display: block; border-bottom: 1px solid #666; color: #666; font-size:12px; }
+#example-one ul li a:hover { background: #fe4902; color: white; font-size:12px; }
+#example-one ul li:last-child a { border: none; font-size:12px; }
+
+#example-one ul li.nav-uno a.current, #example-one ul.uno li a:hover { background-color: #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-dos a.current, #example-one ul.dos li a:hover { background-color:  #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-tres a.current, #example-one ul.tres li a:hover { background-color:  #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-cuatro a.current, #example-one ul.cuatro li a:hover { background-color: #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-cinco a.current, #example-one ul.cinco li a:hover { background-color: #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-seis a.current, #example-one ul.seis li a:hover { background-color: #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-siete a.current, #example-one ul.siete li a:hover { background-color: #FF6; color: #000; list-style:none; }
+#example-one ul li.nav-ocho a.current, #example-one ul.ocho li a:hover { background-color: #FF6; color: #000; list-style:none; }
+

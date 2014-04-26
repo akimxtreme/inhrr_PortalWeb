@@ -1,0 +1,343 @@
+* { margin: 0; padding: 0; }
+body { font: 16px Georgia, serif; }
+html { overflow-y: scroll; }
+a { text-decoration: none; }
+a:focus { outline: 0; }
+p.gerencia {
+	
+	color:#666;
+	font-size: 13px; 
+	margin:4px 4px 5px 4px;
+	text-align:justify;
+}
+div.gerencia{
+	float:left;
+	width: 78%;
+	border:#999 solid 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	
+	}
+
+img.gerencia {
+	border: #FFF dotted 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	-moz-box-shadow: 0 0 5px #666;
+	-webkit-box-shadow: 0 0 5px #666;
+	margin: 4px;
+}
+
+
+
+#page-wrap { width: 100%; margin: 10px 0px 10px 0px; float:left; }
+h1.titulo_gerencia {
+	text-align:center;
+	font-family:'Arial';
+	border-radius: 4px;
+	font-weight:bold;
+	color:#000; 
+	margin: 0 0 10px 0;
+	
+	padding: 2px;
+	font-size:20px;
+	background:#DDE7F1;
+}
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+#example-one {
+float:left;
+background: #DDE7F1;
+padding: 10px 4px 10px 4px;
+margin: 0 0 0px 0;
+-moz-box-shadow: 0 0 5px #666;
+-webkit-box-shadow: 0 0 5px #666;
+border-radius: 4px;
+width:950px;
+}
+
+#example-one .nav { 
+overflow: hidden; 
+margin: 0 0 10px 0; 
+}
+
+#example-one .nav li { 
+width: 125px; 
+float: left; 
+margin: 0 10px 0 0; 
+}
+
+#example-one .nav li.last { 
+margin-right: 0;
+}
+#example-one .nav li a {
+	display: block;
+	padding: 5px; 
+	background: #005DC4; 
+	color: white; 
+	font-size: 10px; 
+	text-align: center; 
+	border: 0; 
+	font-size:13px; border-radius:5px;
+}
+
+#example-one .nav li a:hover { 
+background:#999;
+font-size:13px; border-radius:5px;
+}
+
+#example-one ul { 
+list-style: none;
+font-size:13px; border-radius:5px;
+}
+#example-one ul li a {
+	display: block; 
+	padding: 4px;
+	margin: 4px 2px 4px 2px;
+	background:#CCC;	
+	font-size:13px; 
+	border-radius:5px;
+	color: #005DC4;
+}
+
+
+#example-one ul li a:hover { background: #005DC4; color: white; font-size:13px; border-radius:5px; }
+#example-one ul li:last-child a { border: none; font-size:13px; border-radius:5px; }
+
+#example-one ul li.nav-one a.current, #example-one ul.featured li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-two a.current, #example-one ul.core li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-three a.current, #example-one ul.jquerytuts li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-four a.current, #example-one ul.classics li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-cinco a.current, #example-one ul.cinco li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-seis a.current, #example-one ul.seis li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+#example-one ul li.nav-siete a.current, #example-one ul.siete li a:hover { background-color: #BDBD48; color: #FFF; font-size:13px; border-radius:5px; }
+
+li.gerencia {
+	text-align:justify;
+	color:#333;
+	font-size:13px;
+	margin: 2px;
+	padding: 2px;}
+
+ul.sub_gerencia{
+float:left;
+margin: 5px 20px 5px 30px;
+list-style:circle;
+color:#333333;
+
+}
+
+li.sub_gerencia{
+list-style: outside;
+margin: 5px;
+color:#333333;
+
+}
+div.links_gerencias {
+	float: right;
+	width: 203px;
+	height:auto;
+	border:#CCC solid 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	margin: 0px;
+}
+
+
+a.links_gerencias {
+	float: left;
+	width: 195px;
+	height:48px;
+	color:#FFF;
+	text-align:center;
+	font-size:14px;
+	border:#FFF solid 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	box-shadow: 2px 2px 2px #333;
+   -webkit-box-shadow: 1px 1px 1px #999999;
+   -moz-box-shadow: 1px 1px 1px #999999;
+  	background: #FF9;
+	margin: 2px;
+}
+
+a:hover.links_gerencias {
+	float: left;
+	width: 195px;
+	height:48px;
+	color:#FFF;
+	text-align:center;
+	font-size:14px;
+	border:#000 solid 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	box-shadow: 2px 2px 2px #333;
+   -webkit-box-shadow: 1px 1px 1px #999999;
+   -moz-box-shadow: 1px 1px 1px #999999;
+  	background: #99C;
+	margin: 2px;
+}
+
+img.links_gerencias {
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	}
+
+
+h2.gerencia {
+	font-size:13px;
+	color:#FFF;
+	background:#BDBD48;
+	margin: 10px 4px 4px 4px; 
+	padding: 4px;}
+	
+
+h3.gerencia {
+	font-size:13px;
+	color:#FFF;
+	background:#005DC4;
+	margin: 10px 4px 4px 4px; 
+	padding: 4px;}
+	
+a.gerencia {
+	text-decoration:underline;
+
+	}
+	
+	
+/*************************Estilos Circulares********************************/
+/*************************Estilos Circulares********************************/
+/*************************Estilos Circulares********************************/
+/*************************Estilos Circulares********************************/
+
+#page-wrap-circular {
+width: 100%; 
+overflow: hidden;
+height: auto; }
+
+.info-col { 
+float: left;
+ width: 100px;
+ height: auto;
+ border: #FFF solid 1px;
+ border-radius: 5px;
+ background:#005DC4;
+ 
+ }
+ 
+.info-col h2.circular { 
+margin: 6px 0px 6px 0px;
+text-align: center; 
+font-weight: normal;
+font-size:14px;
+font-family:'Arial';
+color:#FFF;
+}
+
+.image { 
+height: 48px;
+border-radius: 5px;
+text-indent: -9999px;
+display: block; 
+
+}
+.menu_uno { background:url(../imagenes/rc_img/rc_circulares/especialidades_farmaceuticas.png) center center no-repeat; }
+.menu_dos { background: url(../imagenes/rc_img/rc_circulares/productos_biologicos.png) center center no-repeat; }
+.menu_tres { background:url(../imagenes/rc_img/rc_circulares/productos_alimentos.png) center center no-repeat; }
+.menu_cuatro { background:url(../imagenes/rc_img/rc_circulares/productos_cosmeticos.png) center center no-repeat; }
+.menu_cinco { background:url(../imagenes/rc_img/rc_circulares/cenavif.png) center center no-repeat; }
+.menu_seis { background:url(../imagenes/rc_img/rc_circulares/productos_naturales.png) center center no-repeat; }
+
+
+
+dt {
+	
+	background: #BDBD48;
+	color: #FFF;
+	border-radius: 5px;
+	font-family:'Arial';
+	
+	
+}
+dd { 
+position: absolute; 
+left: -9999px; 
+top: -9999px;  
+background: #69C; 
+color: white; 
+font-family:'Arial';
+text-align:justify;
+padding: 4px;
+font-size:12px;
+}
+
+
+
+
+div.circular {
+	border-radius:5px;
+	border: #FFF dotted 1px;
+	padding:4px;
+	margin: 0px 0px 4px 0px;
+	
+	}
+ 
+dt:nth-of-type(1) { background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(1) { background: #69C; margin: 2px; }
+
+dt:nth-of-type(2) { background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(2) { background: #69C; margin: 2px; }
+
+dt:nth-of-type(3) {background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(3) { background: #69C; margin: 2px; }
+
+dt:nth-of-type(4) {background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(4) { background: #69C; margin: 2px; }
+
+dt:nth-of-type(5) { background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(5) { background: #69C; margin: 2px; }
+
+dt:nth-of-type(6) { background: #69C;  margin:2px 2px 3px 2px; }
+dd:nth-of-type(6) { background: #69C; margin: 2px; }
+
+.curCol { -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2); -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2); z-index: 1; position: relative; }
+
+img.circular {
+	margin: 0px 0px 0px 5px;
+	}
+a.circular {
+	color:#FFF;
+	background:url(../imagenes/rc_img/rc_circulares/descarga_circular.png) right no-repeat ;
+	padding: 15px 35px 15px 0px;
+	}
+a:hover.circular {
+	background:url(../imagenes/rc_img/rc_circulares/descarga_circular_2.png) right no-repeat ;
+	}
+p{
+	margin: 3px 2px 5px 2px;
+}
+
+
+/* CV */
+div.cv_cv{
+	float:left;
+	width: 100%;
+	border:#999 solid 1px;
+	border-radius:6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius : 6px;
+	
+	}
+
+

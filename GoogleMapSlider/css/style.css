@@ -1,0 +1,63 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+body { font: 14px Georgia, serif; color: #06C; background: #EFEFEF; }
+p {
+	color:#333;
+	text-align:justify;
+	margin: 4px 0px 0px 0px;
+	}
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+#page-wrap { 
+width: 900px; 
+margin: 0px 0px 0px 0px;
+}
+
+#map_canvas { 
+
+height: 365px;
+width: 320px;
+border: #06C dashed 2px;
+margin: 5px 0px 0px 0px;
+
+float: left;
+position: relative;
+border-radius:8px;
+z-index: 30 !important;
+}
+
+h1 { margin: 0 0 15px 0; font: bold 48px Helvetica, Arial, Sans-Serif; letter-spacing: -2px; }
+h2 { margin: 0 0 15px 0; font: bold 30px Helvetica, Arial, Sans-Serif; letter-spacing: -1px; text-shadow: 0 1px 0px rgba(255,255,255,0.3); }
+h3 { margin: 0 0  1px 0; font: bold 18px Helvetica, Arial, Sans-Serif; letter-spacing: -1px; }
+
+
+#locations { 
+list-style: none; 
+width: 220px; 
+float: left;  }
+
+#locations li { padding: 10px; width: 760px; float: left; position: relative; z-index: 20; }
+#locations li:hover, #locations li.hover { background: #CCC url(../images/shadow.png) 128px 0 repeat-y; }
+#locations li:hover h3, #locations li.hover h3 { color: #06C; text-shadow: 0 1px 0px rgba(255,255,255,0.3); }
+
+
+#content { width: 300px; }
+
+#more-info { width: 310px; float: right; background: #CCC; padding: 20px; height: 360px; }
+#more-info * { position: relative; z-index: 40; }
+
+#more-info > div {background: #FFFECF; -moz-box-shadow: 0 0 14px rgba(70,49,1,0.5); -webkit-box-shadow: 0 0 14px rgba(70,49,1,0.5); padding: 20px; height: 320px; border-radius: 8px; }
+
+.longdesc { display: none;}
+
+
+img.ubicacion {
+
+	}
+	
